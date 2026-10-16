@@ -1,377 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b2545">
-  <meta name="description" content="Yejun Lee is a researcher at Pusan National University working on construction AI, computer vision, generative data augmentation, image quality assessment, and LLM-based reasoning for the built environment.">
-  <meta property="og:title" content="Yejun Lee — Research">
-  <meta property="og:description" content="Construction AI · Computer Vision · Generative AI · LLM & RAG">
-  <meta property="og:type" content="website">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071d66">
+  <meta name="description" content="Yejun Lee — construction AI researcher focused on generative data augmentation, computer vision, image quality assessment, and LLM/RAG for construction management.">
+  <title>Yejun Lee | Research</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-  <link rel="stylesheet" href="assets/style.css">
-  <title>Yejun Lee | Research</title>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Yejun Lee — Home">
-        <span class="brand-symbol">YL<span class="brand-dot">.</span></span>
-        <span class="brand-name">YEJUN LEE</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="primary-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#featured-paper">Featured Paper</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#experience">Background</a>
-        <a href="cv.html">CV</a>
-        <a href="#contact" class="nav-contact">Contact <span aria-hidden="true">↗</span></a>
-      </nav>
+<a href="#main" class="skip">Skip to content</a>
+<header class="mobile-bar">
+  <a href="#about" class="mobile-brand">Yejun Lee<span class="mark-dot">.</span></a>
+  <button type="button" class="mobile-toggle" aria-label="Toggle navigation" aria-controls="side-nav" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+</header>
+<div class="page-shell">
+  <aside class="sidebar">
+    <a href="#about" class="sidebar-eyebrow">RESEARCH PORTFOLIO <span class="tiny-rule"></span></a>
+    <div class="personal">
+      <img src="assets/profile-yejun.webp" alt="Portrait of Yejun Lee" class="portrait" width="190" height="254">
+      <h2>Yejun Lee</h2>
+      <p>Construction AI Researcher<br>Pusan National University</p>
+      <a class="email-link" href="mailto:lyj6720@pusan.ac.kr">lyj6720@pusan.ac.kr <span aria-hidden="true">↗</span></a>
     </div>
-  </header>
-
+    <nav id="side-nav" class="side-nav" aria-label="Main navigation">
+      <a href="#about" class="active"><span>01</span>About</a>
+      <a href="#journals"><span>02</span>Journal articles</a>
+      <a href="#conferences"><span>03</span>Conference papers</a>
+      <a href="#projects"><span>04</span>Research projects</a>
+      <a href="#experience"><span>05</span>Experience</a>
+      <a href="#awards"><span>06</span>Honors & awards</a>
+    </nav>
+    <div class="side-end">
+      <a href="cv.html" class="cv-link">Curriculum vitae <span aria-hidden="true">↗</span></a>
+      <p>Busan, South Korea</p>
+    </div>
+  </aside>
   <main id="main">
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> RESEARCHER · CONSTRUCTION MANAGEMENT & AI</div>
-        <h1 id="hero-title">Yejun <em>Lee.</em></h1>
-        <p class="hero-headline">AI for safer and smarter<br><span>construction.</span></p>
-        <p class="hero-summary">
-          I study how <strong>computer vision</strong>, <strong>generative AI</strong>, and <strong>LLM-based reasoning</strong>
-          can improve safety monitoring and evidence-grounded decision support in the built environment.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#featured-paper">View featured paper <span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="cv.html">Open CV <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="hero-tags" aria-label="Research interests">
-          <span>Construction AI</span>
-          <span>Computer Vision</span>
-          <span>Generative Data Augmentation</span>
-          <span>Image Quality Assessment</span>
-          <span>LLM & RAG</span>
-        </div>
-        <div class="hero-affiliation">
-          <span class="affiliation-line" aria-hidden="true"></span>
-          <span>
-            M.S., Department of Architectural Engineering<br>
-            <strong>Pusan National University</strong> · Busan, South Korea
-          </span>
-        </div>
+    <section id="about" class="intro-section" aria-labelledby="name-heading">
+      <div class="kicker"><i></i> Architectural engineering · Construction management</div>
+      <div class="mobile-bio"><img src="assets/profile-yejun.webp" alt="Portrait of Yejun Lee" width="76" height="101"></div>
+      <h1 id="name-heading">Yejun Lee <span lang="ko">이예준</span></h1>
+      <p class="role">M.S., Architectural Engineering (Construction Management)<br>Pusan National University · Advisor: Prof. JungHo Jeon</p>
+      <p class="personal-statement">My research explores how <strong>generative AI</strong> and <strong>computer vision</strong> can improve construction safety applications, particularly through more effective training data. I investigate image quality assessment and synthetic-data curation for construction object detection, while also exploring <strong>LLM and retrieval-augmented generation</strong> for evidence-grounded construction supervision.</p>
+      <div class="keywords" aria-label="Research interests">
+        <span>Generative AI</span><span>Computer vision</span><span>Image quality assessment</span><span>Construction safety</span><span>LLM & RAG</span>
       </div>
-
-      <aside class="hero-profile-card">
-        <img src="assets/profile-yejun.webp" alt="Portrait of Yejun Lee" class="profile-photo" loading="eager">
-        <div class="profile-text">
-          <h2>Yejun Lee</h2>
-          <p>Researcher in construction AI, focusing on generative augmentation, image quality assessment, and AI systems for construction management.</p>
-          <dl>
-            <div><dt>Email</dt><dd><a href="mailto:lyj6720@pusan.ac.kr">lyj6720@pusan.ac.kr</a></dd></div>
-            <div><dt>Advisor</dt><dd>Prof. JungHo Jeon</dd></div>
-            <div><dt>Location</dt><dd>Busan, South Korea</dd></div>
-          </dl>
-        </div>
-      </aside>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container split-intro">
-        <div>
-          <span class="section-number">01 — ABOUT</span>
-          <h2 id="about-title">Research at the intersection of <span>vision, quality, and reasoning.</span></h2>
-        </div>
-        <div class="lead-columns">
-          <p>
-            My research centers on construction AI. I investigate how machine learning systems can better interpret construction scenes and project documents, with a particular emphasis on reliability, evidence quality, and practical usefulness.
-          </p>
-          <p>
-            My recent work examines how the quality of synthetic images affects downstream object detection. I also study retrieval-augmented reasoning over construction supervision documents to support traceable, project-state-aware question answering.
-          </p>
-        </div>
+      <div class="education">
+        <div class="micro-head"><span>EDUCATION</span><span>Pusan National University</span></div>
+        <div class="edu-entry"><span class="edu-degree">M.S.</span><div><h3>Architectural Engineering (Construction Management)</h3><p>Thesis: Improving Construction Object Detection Using Generative AI Image Quality Assessment</p></div><time>Mar 2025 – Aug 2026</time></div>
+        <div class="edu-entry"><span class="edu-degree">B.S.</span><div><h3>Architectural Engineering</h3><p>Department of Architectural Engineering</p></div><time>Mar 2021 – Feb 2025</time></div>
       </div>
     </section>
 
-    <section class="section shaded" id="featured-paper" aria-labelledby="featured-title">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="section-number">02 — FEATURED PAPER</span>
-            <h2 id="featured-title">Under-review manuscript <span>with real figures.</span></h2>
-          </div>
-          <p>Representative figures are shown below from the author-provided manuscript currently under review.</p>
-        </div>
+    <section id="journals" class="content-section" aria-labelledby="journals-heading">
+      <div class="section-heading"><div><p class="section-number">02 / RESEARCH</p><h2 id="journals-heading">Journal articles <span class="heading-count">03</span></h2></div><p>Published research and a manuscript<br>currently under review.</p></div>
+      <div class="filters" role="group" aria-label="Filter journal articles">
+        <button class="selected" type="button" data-filter="all" aria-pressed="true">All research</button>
+        <button type="button" data-filter="generative" aria-pressed="false">Generative AI</button>
+        <button type="button" data-filter="vision" aria-pressed="false">Computer vision</button>
+      </div>
+      <div class="paper-grid" id="journal-grid">
+        <button type="button" class="paper-card" data-paper="iqa" data-topics="generative vision" aria-haspopup="dialog">
+          <div class="paper-figure"><img src="assets/paper-framework.webp" alt="Actual research framework from under-review image quality assessment manuscript" loading="lazy"><span class="figure-label">IMAGE QUALITY ASSESSMENT</span></div>
+          <div class="paper-details"><p class="paper-pretitle"><span>JOURNAL MANUSCRIPT</span><span>2026</span></p><h3>Synthetic Data Filtering for Enhanced Construction Object Detection via Image Quality Assessment</h3><p class="paper-venue">Developments in the Built Environment</p><p class="paper-excerpt">Studying the downstream value of quality-selected synthetic training images for safety helmets and excavators.</p><div class="paper-foot"><span>Under review</span><b aria-hidden="true">↗</b></div></div>
+        </button>
+        <button type="button" class="paper-card" data-paper="autcon" data-topics="generative vision" aria-haspopup="dialog">
+          <div class="paper-figure"><img src="assets/autcon-framework.png" alt="Research framework from the published Automation in Construction paper" loading="lazy"><span class="figure-label">GENERATIVE AUGMENTATION</span></div>
+          <div class="paper-details"><p class="paper-pretitle"><span>JOURNAL ARTICLE</span><span>2025</span></p><h3>Generative AI-driven data augmentation for enhanced construction hazard detection</h3><p class="paper-venue">Automation in Construction · 177, 106317</p><p class="paper-excerpt">Exploring image generation tools, prompting strategies, and data quantity for vision-based hazard detection.</p><div class="paper-foot"><span>Published · <span class="doi-text">DOI available</span></span><b aria-hidden="true">↗</b></div></div>
+        </button>
+        <button type="button" class="paper-card" data-paper="drowsy" data-topics="generative vision" aria-haspopup="dialog">
+          <div class="paper-figure text-only"><div class="typographic-cover"><small>RESEARCH ARTICLE · 2025</small><span>Computer Vision<br>& Generative Data</span><em>SUSTAINABILITY</em></div><span class="figure-label">WORKER MONITORING</span></div>
+          <div class="paper-details"><p class="paper-pretitle"><span>JOURNAL ARTICLE</span><span>2025</span></p><h3>Improvement of Construction Workers’ Drowsiness Detection and Classification via Text-to-Image Augmentation and Computer Vision</h3><p class="paper-venue">Sustainability · 17(20), 9158</p><p class="paper-excerpt">Applying synthetic image augmentation and computer vision to worker drowsiness classification.</p><div class="paper-foot"><span>Published · <span class="doi-text">DOI available</span></span><b aria-hidden="true">↗</b></div></div>
+        </button>
+      </div>
+      <p class="quiet-note">Paper figures shown above are from the author-provided manuscript or the published paper. The Sustainability card uses a text cover rather than an unverified figure.</p>
+    </section>
 
-        <article class="featured-paper-card">
-          <div class="paper-meta-row">
-            <span class="pill">UNDER REVIEW</span>
-            <span class="pill soft">Developments in the Built Environment</span>
-          </div>
-          <h3>Synthetic Data Filtering for Enhanced Construction Object Detection via Image Quality Assessment</h3>
-          <p class="paper-authors"><strong>Y. Lee</strong>, J. Lee, F. Baek, H. Kim, J. Kim, and J. Jeon</p>
-          <p class="paper-summary">
-            This manuscript investigates how generative image quality influences construction object detection. It proposes an IQA-based synthetic-data curation framework and evaluates the effects of high-quality versus low-quality generated images for safety helmet and excavator detection.
-          </p>
-          <div class="highlight-grid">
-            <div class="highlight-box">
-              <span class="metric-label">Peak performance</span>
-              <strong>80.5%</strong>
-              <p>Safety helmet mAP@50</p>
-            </div>
-            <div class="highlight-box">
-              <span class="metric-label">Peak performance</span>
-              <strong>96.5%</strong>
-              <p>Excavator mAP@50</p>
-            </div>
-            <div class="highlight-box">
-              <span class="metric-label">Core finding</span>
-              <strong>HQ &gt; LQ</strong>
-              <p>Higher-quality generated images generally improve downstream detection more effectively.</p>
-            </div>
-          </div>
-        </article>
-
-        <div class="figure-grid figure-grid-featured">
-          <figure class="figure-card figure-card-wide">
-            <img src="assets/paper-framework.webp" alt="Figure 1. Research framework from the under-review manuscript." loading="lazy">
-            <figcaption><strong>Fig. 1.</strong> Research framework of the proposed methodology.</figcaption>
-          </figure>
-          <figure class="figure-card">
-            <img src="assets/paper-quality-results.webp" alt="Figure 7. Detection performance by generative image quality." loading="lazy">
-            <figcaption><strong>Fig. 7.</strong> Detection performance by generative image quality.</figcaption>
-          </figure>
-          <figure class="figure-card">
-            <img src="assets/paper-quantity-results.webp" alt="Figure 8. Detection performance by generative image quantity." loading="lazy">
-            <figcaption><strong>Fig. 8.</strong> Detection performance by generative image quantity.</figcaption>
-          </figure>
-          <figure class="figure-card">
-            <img src="assets/paper-detection-examples.webp" alt="Figure 9. Object detection results with IQA-based augmentation." loading="lazy">
-            <figcaption><strong>Fig. 9.</strong> Object detection results with IQA-based augmentation.</figcaption>
-          </figure>
-          <figure class="figure-card">
-            <img src="assets/paper-labeling-examples.webp" alt="Figure 6. Examples of labeled images." loading="lazy">
-            <figcaption><strong>Fig. 6.</strong> Examples of labeled images used for object detection training.</figcaption>
-          </figure>
-        </div>
+    <section id="conferences" class="content-section" aria-labelledby="conferences-heading">
+      <div class="section-heading"><div><p class="section-number">03 / CONFERENCES</p><h2 id="conferences-heading">Conference papers <span class="heading-count">08</span></h2></div><p>International and domestic<br>conference contributions.</p></div>
+      <div class="conference-list">
+        <div class="conference-group-title">INTERNATIONAL CONFERENCES</div>
+        <article class="conf-row"><span class="conf-date">2026</span><div><h3>Quality-centered Generative Image Augmentation Approach for Construction Safety Object Detection</h3><p><strong>Y. Lee</strong>, S. Yoon, N. Kim, and J. Jeon</p><p class="conf-journal">International Conference on Computing in Civil Engineering (i3CE 2026) · Presented; proceedings forthcoming</p></div><span class="conf-icon">—</span></article>
+        <article class="conf-row"><span class="conf-date">2024</span><div><h3>Computer Vision-based Construction Hazard Detection via Data Augmentation Approach using Generative-AI</h3><p>W. Jo, <strong>Y. Lee</strong>, D. Jung, H. Park, and J. Jeon</p><p class="conf-journal">International Conference on Construction Engineering and Project Management (ICCEPM) · pp. 791–798</p></div><a class="conf-icon conf-link" href="https://doi.org/10.6106/ICCEPM.2024.0791" target="_blank" rel="noopener noreferrer" aria-label="Open ICCEPM paper DOI">↗</a></article>
+        <div class="conference-group-title secondary-group">DOMESTIC CONFERENCES</div>
+        <article class="conf-row"><span class="conf-date">2025</span><div><h3>Assessing the Potential of Image Quality Assessment to Improve Construction Site Object Detection</h3><p><strong>Y. Lee</strong>, W. Jo, G. Lim, G. Kim, H. Park, and J. Jeon · KICEM Annual Conference</p><span class="award-label">Best Paper Award</span></div></article>
+        <article class="conf-row"><span class="conf-date">2025</span><div><h3>Multiclass Classification of Construction Workers’ Stress States Using rPPG</h3><p>J. Seong, K. Jeong, <strong>Y. Lee</strong>, G. Kang, H. Park, and J. Jeon · KIBC Fall Conference</p><span class="award-label">Best Paper Award</span></div></article>
+        <article class="conf-row"><span class="conf-date">2025</span><div><h3>Comparing Construction Duration Prediction Performance Using Machine Learning and Generative AI</h3><p>W. Jo, <strong>Y. Lee</strong>, K. Jeong, G. Park, Y. Choi, G. Kim, H. Park, and J. Jeon · AIK Conference</p><span class="award-label">Best Paper Award</span></div></article>
+        <article class="conf-row"><span class="conf-date">2025</span><div><h3>Development of an AI-Based Generative Image Quality Assessment Framework for Construction Safety Management</h3><p><strong>Y. Lee</strong>, G. Kang, W. Jo, J. Seong, H. Park, and J. Jeon · AIK Conference</p></div></article>
+        <article class="conf-row"><span class="conf-date">2024</span><div><h3>A Framework for Improving Safety Helmet Detection at Construction Sites Through Generative AI Data Augmentation</h3><p><strong>Y. Lee</strong>, G. Kang, W. Jo, S. Cho, and J. Jeon · AIK Regional Conference</p></div></article>
+        <article class="conf-row"><span class="conf-date">2024</span><div><h3>Generative AI Data Augmentation for Improved Computer Vision Hazard Identification</h3><p>G. Kang, <strong>Y. Lee</strong>, W. Jo, S. Cho, S. Yoon, and J. Jeon · AIK Conference</p><span class="award-label">Best Paper Award</span></div></article>
       </div>
     </section>
 
-    <section class="section" id="research" aria-labelledby="research-title">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="section-number">03 — RESEARCH</span>
-            <h2 id="research-title">Current research <span>directions.</span></h2>
-          </div>
-          <p>My work spans construction safety computer vision, synthetic-data curation, and evidence-grounded language models.</p>
-        </div>
-
-        <div class="research-card-grid">
-          <article class="research-card">
-            <img src="assets/paper-real-examples.webp" alt="Real image examples of safety helmets and excavators from the manuscript." loading="lazy">
-            <div class="research-card-body">
-              <div class="research-meta"><span>RESEARCH 01</span><span>2025–2026</span></div>
-              <h3>Quality-aware synthetic data for construction object detection</h3>
-              <p>Studying how image quality assessment can guide the selection of AI-generated images for object detection in safety-critical construction contexts.</p>
-              <div class="research-keywords">IQA <b>·</b> SYNTHETIC DATA CURATION <b>·</b> OBJECT DETECTION</div>
-            </div>
-          </article>
-
-          <article class="research-card">
-            <img src="assets/paper-augmented-examples.webp" alt="Augmented image examples of safety helmets and excavators from the manuscript." loading="lazy">
-            <div class="research-card-body">
-              <div class="research-meta"><span>RESEARCH 02</span><span>2024–2025</span></div>
-              <h3>Generative augmentation for construction hazard detection</h3>
-              <p>Exploring text-to-image augmentation to address data scarcity in construction safety monitoring and to enhance the robustness of hazard-related recognition models.</p>
-              <div class="research-keywords">GENERATIVE AI <b>·</b> CONSTRUCTION SAFETY <b>·</b> COMPUTER VISION</div>
-            </div>
-          </article>
-
-          <article class="research-card text-card">
-            <div class="research-card-body">
-              <div class="research-meta"><span>RESEARCH 03</span><span>ONGOING</span></div>
-              <h3>LLM + RAG for construction supervision</h3>
-              <p>Developing an evidence-grounded framework that retrieves relevant documents, reasons over time and procedural roles, and generates cited responses for construction supervision tasks.</p>
-              <ul class="bullet-list">
-                <li>Focus on personnel assignments, material approvals, and project-state reasoning.</li>
-                <li>Goal: traceable Q&amp;A grounded in real project documents.</li>
-                <li>Methodological emphasis: retrieval, temporal context, and evidence conflict resolution.</li>
-              </ul>
-              <div class="research-keywords">LARGE LANGUAGE MODELS <b>·</b> RETRIEVAL-AUGMENTED GENERATION <b>·</b> EVIDENCE REASONING</div>
-            </div>
-          </article>
-        </div>
+    <section id="projects" class="content-section" aria-labelledby="projects-heading">
+      <div class="section-heading"><div><p class="section-number">04 / RESEARCH PROJECTS</p><h2 id="projects-heading">Selected projects</h2></div></div>
+      <p class="subhead">FUNDED RESEARCH</p>
+      <div class="project-list">
+        <article class="project-row"><time>2026–2027</time><div><h3>Construction Safety Management Agents Using Human Foundation Models</h3><p>Participating Researcher · Pusan National University</p><small>Sep 2026 – Feb 2027</small></div></article>
+        <article class="project-row"><time>2025–2030</time><div><h3>Safety Management Platform Using Generative AI Data Augmentation</h3><p>National Research Foundation of Korea · Participating Researcher</p><small>Mar 2025 – Feb 2030</small></div></article>
+        <article class="project-row"><time>2024–2026</time><div><h3>BIM-Based Decision Support for Green Building Planning Across Design Stages</h3><p>National Research Foundation of Korea · Participating Researcher</p><small>Jun 2024 – Feb 2026</small></div></article>
+        <article class="project-row"><time>2024</time><div><h3>Checklists for Finishing Work Based on Defect Risk by Building Type</h3><p>Participating Researcher · Pusan National University</p><small>Jun – Aug 2024</small></div></article>
+        <article class="project-row"><time>2024–2025</time><div><h3>Intelligent Robotic System for Grinding High-Rise Concrete Walls</h3><p>Participating Researcher · Pusan National University</p><small>May 2024 – Feb 2025</small></div></article>
       </div>
+      <p class="subhead ongoing-title">ONGOING RESEARCH DIRECTION</p>
+      <div class="ongoing-panel"><div><h3>LLM + RAG for Construction Supervision</h3><p>Exploring retrieval and process-aware reasoning across construction supervision documents, including temporal context, approvals, and changes to project records.</p><div class="mini-tags"><span>Retrieval-augmented generation</span><span>Project-state reasoning</span><span>Evidence grounding</span></div></div><span class="status-quiet">Research in progress</span></div>
     </section>
 
-    <section class="section shaded" id="publications" aria-labelledby="publications-title">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="section-number">04 — PUBLICATIONS</span>
-            <h2 id="publications-title">Selected <span>publications.</span></h2>
-          </div>
-          <p>Publication metadata and DOI links are based on the author-provided CV.</p>
-        </div>
-
-        <div class="publication-list">
-          <article class="publication">
-            <span class="pub-year">2026</span>
-            <div>
-              <div class="pub-type">JOURNAL MANUSCRIPT <span class="pub-status">UNDER REVIEW</span></div>
-              <h3>Synthetic Data Filtering for Enhanced Construction Object Detection via Image Quality Assessment</h3>
-              <p><strong>Y. Lee</strong>, J. Lee, F. Baek, H. Kim, J. Kim, and J. Jeon · <i>Developments in the Built Environment</i></p>
-            </div>
-            <span class="pub-arrow muted">—</span>
-          </article>
-
-          <article class="publication">
-            <span class="pub-year">2025</span>
-            <div>
-              <div class="pub-type">JOURNAL ARTICLE</div>
-              <h3>Generative AI-driven data augmentation for enhanced construction hazard detection</h3>
-              <p><strong>Y. Lee</strong>, G. Kang, J. Kim, S. Yoon, and J. Jeon · <i>Automation in Construction</i>, 177, 106317</p>
-            </div>
-            <a href="https://doi.org/10.1016/j.autcon.2025.106317" target="_blank" rel="noopener noreferrer" class="pub-arrow" aria-label="Open journal article DOI">↗</a>
-          </article>
-
-          <article class="publication">
-            <span class="pub-year">2025</span>
-            <div>
-              <div class="pub-type">JOURNAL ARTICLE</div>
-              <h3>Improvement of Construction Workers’ Drowsiness Detection and Classification via Text-to-Image Augmentation and Computer Vision</h3>
-              <p>D. Jung, <strong>Y. Lee</strong>, K. Jeong, J. Lee, J. Kim, H. Park, and J. Jeon · <i>Sustainability</i>, 17(20), 9158</p>
-            </div>
-            <a href="https://doi.org/10.3390/su17209158" target="_blank" rel="noopener noreferrer" class="pub-arrow" aria-label="Open journal article DOI">↗</a>
-          </article>
-
-          <article class="publication">
-            <span class="pub-year">2026</span>
-            <div>
-              <div class="pub-type">INTERNATIONAL CONFERENCE <span class="pub-status">PROCEEDINGS FORTHCOMING</span></div>
-              <h3>Quality-centered Generative Image Augmentation Approach for Construction Safety Object Detection</h3>
-              <p><strong>Y. Lee</strong>, S. Yoon, N. Kim, and J. Jeon · <i>International Conference on Computing in Civil Engineering (i3CE 2026)</i></p>
-            </div>
-            <span class="pub-arrow muted">—</span>
-          </article>
-
-          <article class="publication">
-            <span class="pub-year">2024</span>
-            <div>
-              <div class="pub-type">INTERNATIONAL CONFERENCE</div>
-              <h3>Computer Vision-based Construction Hazard Detection via Data Augmentation Approach using Generative-AI</h3>
-              <p>W. Jo, <strong>Y. Lee</strong>, D. Jung, H. Park, and J. Jeon · <i>ICCEPM 2024</i>, 791–798</p>
-            </div>
-            <a href="https://doi.org/10.6106/ICCEPM.2024.0791" target="_blank" rel="noopener noreferrer" class="pub-arrow" aria-label="Open conference paper DOI">↗</a>
-          </article>
-        </div>
-
-        <details class="more-publications">
-          <summary>View domestic conference contributions <span class="plus-mark" aria-hidden="true">+</span></summary>
-          <div class="more-publications-content">
-            <ol>
-              <li><b>2025</b> — Assessing the Potential of Image Quality Assessment to Improve Construction Site Object Detection. KICEM Annual Conference. <em>Best Paper Award.</em></li>
-              <li><b>2025</b> — Multiclass Classification of Construction Workers’ Stress States Using rPPG. Korea Institute of Building Construction Fall Conference. <em>Best Paper Award.</em></li>
-              <li><b>2025</b> — Comparing Construction Duration Prediction Performance Using Machine Learning and Generative AI. Architectural Institute of Korea Conference. <em>Best Paper Award.</em></li>
-              <li><b>2025</b> — Development of an AI-Based Generative Image Quality Assessment Framework for Construction Safety Management. Architectural Institute of Korea Conference.</li>
-              <li><b>2024</b> — A Framework for Improving Safety Helmet Detection at Construction Sites Through Generative AI Data Augmentation. AIK Regional Conference.</li>
-              <li><b>2024</b> — Generative AI Data Augmentation for Improved Computer Vision Hazard Identification. Architectural Institute of Korea Conference. <em>Best Paper Award.</em></li>
-            </ol>
-          </div>
-        </details>
-      </div>
+    <section id="experience" class="content-section" aria-labelledby="experience-heading">
+      <div class="section-heading"><div><p class="section-number">05 / EXPERIENCE</p><h2 id="experience-heading">Academic experience</h2></div></div>
+      <div class="exp-row"><time>Sep 2025 – Aug 2026</time><div><h3>Teaching and Research Support (TA/TB)</h3><p class="exp-org">Department of Architectural Engineering, Pusan National University</p><p>Supported teaching and research activities in construction management and AI-related work.</p></div></div>
+      <div class="exp-row"><time>2024 – Present</time><div><h3>Research project participation</h3><p class="exp-org">Pusan National University · Construction management research</p><p>Collaborative research in construction safety, generative AI, digital construction, and applied machine learning.</p></div></div>
     </section>
 
-    <section class="section" id="experience" aria-labelledby="experience-title">
-      <div class="container split-intro">
-        <div>
-          <span class="section-number">05 — BACKGROUND</span>
-          <h2 id="experience-title">Education, projects, and <span>awards.</span></h2>
-        </div>
-        <div class="lead-columns">
-          <div>
-            <h3 class="small-heading">EDUCATION</h3>
-            <div class="timeline">
-              <div class="timeline-item">
-                <span>2025 — 2026</span>
-                <h4>M.S., Architectural Engineering</h4>
-                <p>Construction Management · Pusan National University</p>
-                <p class="timeline-detail">Thesis: Improving Construction Object Detection Using Generative AI Image Quality Assessment</p>
-              </div>
-              <div class="timeline-item">
-                <span>2021 — 2025</span>
-                <h4>B.S., Architectural Engineering</h4>
-                <p>Pusan National University</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h3 class="small-heading">SELECTED PROJECTS</h3>
-            <div class="timeline">
-              <div class="timeline-item">
-                <span>2026 — 2027</span>
-                <h4>Construction Safety Management Agents Using Human Foundation Models</h4>
-                <p>Participating Researcher · Pusan National University</p>
-              </div>
-              <div class="timeline-item">
-                <span>2025 — 2030</span>
-                <h4>Safety Management Platform Using Generative AI Data Augmentation</h4>
-                <p>Participating Researcher · National Research Foundation of Korea project</p>
-              </div>
-              <div class="timeline-item">
-                <span>2024 — 2026</span>
-                <h4>BIM-Based Decision Support for Green Building Planning Across Design Stages</h4>
-                <p>Participating Researcher</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="awards">
-          <h3 class="small-heading">HONORS</h3>
-          <div class="awards-row">
-            <span>Best Paper Award · KICEM <b>2025</b></span>
-            <span>Outstanding Academic Award · KIBC <b>2025</b></span>
-            <span>Outstanding Presentation Paper · AIK <b>2025</b></span>
-            <span>Top Prize · Construction Scheduling Competition <b>2024</b></span>
-            <span>Best Paper Award · AIK <b>2024</b></span>
-          </div>
-        </div>
+    <section id="awards" class="content-section" aria-labelledby="awards-heading">
+      <div class="section-heading"><div><p class="section-number">06 / RECOGNITION</p><h2 id="awards-heading">Honors & awards</h2></div></div>
+      <div class="award-list">
+        <div class="award-row"><time>Nov 2025</time><span>Best Paper Award · Korea Institute of Construction Engineering and Management</span></div>
+        <div class="award-row"><time>Nov 2025</time><span>Outstanding Academic Award · Korea Institute of Building Construction</span></div>
+        <div class="award-row"><time>Oct 2025</time><span>Outstanding Presentation Paper Award · Architectural Institute of Korea</span></div>
+        <div class="award-row"><time>Nov 2024</time><span>Top Prize · Construction Scheduling Competition, KICEM</span></div>
+        <div class="award-row"><time>Oct 2024</time><span>Best Paper Award · Architectural Institute of Korea</span></div>
+        <div class="award-row"><time>Nov 2023</time><span>Encouragement Award · Cost Management Competition, KICEM</span></div>
       </div>
+      <div class="research-skills"><h3>Research methods & tools</h3><p>Python · YOLOv8 · Stable Diffusion · GMM-GIQA · ImageReward · Computer Vision · Large Language Models · Retrieval-Augmented Generation</p></div>
     </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-inner">
-        <span class="section-number">06 — CONTACT</span>
-        <div class="contact-layout">
-          <div>
-            <h2 id="contact-title">Let's connect<span>.</span></h2>
-            <p>I welcome conversations about research collaboration, construction AI, and future doctoral research opportunities.</p>
-          </div>
-          <div class="contact-info">
-            <span>EMAIL</span>
-            <a href="mailto:lyj6720@pusan.ac.kr">lyj6720@pusan.ac.kr <span aria-hidden="true">↗</span></a>
-            <small>Department of Architectural Engineering<br>Pusan National University, South Korea</small>
-          </div>
-        </div>
-      </div>
-    </section>
+    <footer class="page-footer"><span>Yejun Lee</span><small>Last updated October 2026</small><a href="#about">Back to top ↑</a></footer>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="copyright-year">2026</span> Yejun Lee</span>
-      <span>Research portfolio · Built from author-provided CV and manuscript materials</span>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
-
-  <script src="assets/site.js" defer></script>
+</div>
+<dialog id="paper-modal" class="paper-modal" aria-labelledby="modal-title"><div class="modal-toolbar"><span>RESEARCH DETAIL</span><button type="button" class="modal-close">Close <span aria-hidden="true">×</span></button></div><div class="modal-content" id="modal-content"></div></dialog>
 </body>
 </html>
