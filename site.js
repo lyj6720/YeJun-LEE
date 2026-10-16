@@ -6,8 +6,9 @@
       title: 'Synthetic Data Filtering for Enhanced Construction Object Detection via Image Quality Assessment',
       authors: 'Y. Lee, J. Lee, F. Baek, H. Kim, J. Kim, and J. Jeon',
       venue: 'Developments in the Built Environment · Under review',
-      summary: 'This study examines whether image quality assessment can guide synthetic-data curation for construction object detection. GMM-GIQA and ImageReward are used to independently rank AI-generated images of safety helmets and excavators. The work investigates whether quality-selected images improve YOLOv8 detection performance, and whether the relative effectiveness of the two IQA criteria differs across target objects. The main experiments report maximum mAP@50 values of 80.5% for safety helmets and 96.5% for excavators. These results belong to a manuscript under review and should not be interpreted as published findings.',
+      summary: 'This under-review manuscript investigates synthetic-image filtering for construction object detection. Stable Diffusion v2.1 produces 600 synthetic images for each of two object categories (safety helmets and excavators). GMM-GIQA and ImageReward separately rank the images; high- and low-quality subsets are then evaluated in YOLOv8 training across six augmentation sizes. The experiments report peak mean mAP@50 of 80.5% for helmets and 96.5% for excavators. ImageReward is stronger for helmet imagery in the main experiment; GMM-GIQA is stronger for excavators. Repeated-seed, quantity-matched and independent-replication analyses test the scope of these observations. These are results from an unpublished manuscript, not a peer-reviewed publication.',
       links: [],
+      methods: ['Stable Diffusion v2.1','GMM-GIQA','ImageReward','YOLOv8','10 repeated seeds'],
       figures: [
         ['assets/paper-framework.webp', 'Fig. 1. Research framework', 'Research framework from the author-provided manuscript'],
         ['assets/paper-quality-results.webp', 'Fig. 7. Detection performance by generative image quality', 'Line charts comparing generative image quality and detection performance'],
@@ -21,9 +22,10 @@
       title: 'Generative AI-driven data augmentation for enhanced construction hazard detection',
       authors: 'Y. Lee, G. Kang, J. Kim, S. Yoon, and J. Jeon',
       venue: 'Automation in Construction, 177, 106317 (2025)',
-      summary: 'This paper explores generative AI-based data augmentation for construction hazard detection. It compares image generation tools and prompting strategies and evaluates how synthetic-image quantity influences downstream object detection. The study demonstrates how carefully designed synthetic training images can address the scarcity of construction hazard data, while highlighting that more augmented images do not necessarily lead to better performance.',
+      summary: 'This published study evaluates construction unprotected-opening detection using three generative AI tools (DALL-E, Midjourney, Stable Diffusion) combined with three prompting strategies (zero-shot, structured, and image-guided structured prompting). The best combination—Stable Diffusion with image-guided structured prompting—improves YOLOv8n mAP@50 from a baseline of 51.6% to 92.5% when 150 generated images are incorporated. The findings also show that indiscriminately increasing synthetic-image quantity is not always helpful.',
       links: [{label: 'Read published paper ↗', url: 'https://doi.org/10.1016/j.autcon.2025.106317'}],
-      figures: [['assets/autcon-framework.png', 'Research framework from the published paper', 'Generative AI data augmentation framework from Automation in Construction 2025']],
+      methods: ['Midjourney / DALL-E / Stable Diffusion','Prompting strategies','YOLOv8n','mAP@50'],
+      figures: [['assets/autcon-framework.png', 'Original research framework from Lee et al. (2025), Automation in Construction.', 'Generative AI data augmentation framework from Automation in Construction 2025']],
       citation: 'Lee, Y., Kang, G., Kim, J., Yoon, S., & Jeon, J. (2025). Generative AI-driven data augmentation for enhanced construction hazard detection. Automation in Construction, 177, 106317. https://doi.org/10.1016/j.autcon.2025.106317'
     },
     drowsy: {
@@ -31,9 +33,13 @@
       title: 'Improvement of Construction Workers’ Drowsiness Detection and Classification via Text-to-Image Augmentation and Computer Vision',
       authors: 'D. Jung, Y. Lee, K. Jeong, J. Lee, J. Kim, H. Park, and J. Jeon',
       venue: 'Sustainability, 17(20), 9158 (2025)',
-      summary: 'This co-authored study explores the use of text-to-image augmentation and computer vision for construction worker drowsiness detection and classification. The publication is available at its DOI. This portfolio does not display a figure for this article because the corresponding original figure file was not supplied.',
+      summary: 'This published co-authored work investigates text-to-image augmentation for construction-worker drowsiness detection using construction and non-construction datasets, polygon-based labeling, and YOLOv8/YOLO11 detectors. Domain-matched training improves performance relative to non-construction imagery. With 400 synthetic training images, the reported peak mAP@50 reaches 95.3% for YOLOv8 and 93.3% for YOLO11 (versus real-only baselines of 68.2% and 56.6%, respectively). The graph below is accurately redrawn from Tables 4–5 of the open-access article.',
       links: [{label: 'Read published paper ↗', url: 'https://doi.org/10.3390/su17209158'}],
-      figures: [],
+      methods: ['Text-to-image generation','Domain-specific datasets','YOLOv8 / YOLO11','Polygon annotation'],
+      figures: [
+        ['assets/drowsiness-performance.svg', 'Performance trend redrawn from Sustainability (2025), Tables 4–5. Not an original published figure.', 'Reconstructed chart of YOLOv8 and YOLO11 detection performance'],
+        ['https://www.mdpi.com/sustainability/sustainability-17-09158/article_deploy/html/images/sustainability-17-09158-g003.png', 'Original Fig. 3. Examples of labeled images, Jung et al. (2025), Sustainability 17, 9158; © authors, CC BY 4.0. Hosted by MDPI.', 'Original annotated awake and drowsy image examples from the published study']
+      ],
       citation: 'Jung, D., Lee, Y., Jeong, K., Lee, J., Kim, J., Park, H., & Jeon, J. (2025). Improvement of Construction Workers’ Drowsiness Detection and Classification via Text-to-Image Augmentation and Computer Vision. Sustainability, 17(20), 9158. https://doi.org/10.3390/su17209158'
     }
   };
@@ -84,10 +90,11 @@
         <img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" loading="lazy">
         <figcaption><span>${escapeHtml(caption)}</span><a href="${escapeHtml(src)}" target="_blank" rel="noopener">Full size ↗</a></figcaption>
       </figure>`).join('');
+    const methods = p.methods?.length ? `<div class="modal-method-tags">${p.methods.map(m => `<span>${escapeHtml(m)}</span>`).join('')}</div>` : '';
     const actions = p.links.length ? `<div class="modal-actions">${p.links.map((x,i)=>`<a class="${i===0?'main-action':''}" target="_blank" rel="noopener noreferrer" href="${escapeHtml(x.url)}">${escapeHtml(x.label)}</a>`).join('')}</div>` : '';
     return `<p class="modal-tag">${escapeHtml(p.category)}</p><h2 id="modal-title">${escapeHtml(p.title)}</h2>
       <p class="modal-authors">${escapeHtml(p.authors)}</p><p class="modal-journal">${escapeHtml(p.venue)}</p>${actions}
-      <h3 class="modal-label">RESEARCH OVERVIEW</h3><p class="modal-summary">${escapeHtml(p.summary)}</p>
+      <h3 class="modal-label">RESEARCH OVERVIEW</h3><p class="modal-summary">${escapeHtml(p.summary)}</p>${methods}
       ${p.figures.length ? `<h3 class="modal-label">RESEARCH FIGURES</h3>${figures}` : ''}
       <div class="modal-citation"><div class="citation-bar"><span class="modal-label">CITATION</span><button type="button" class="copy-citation" data-copy="${escapeHtml(id)}">Copy citation</button></div><p>${escapeHtml(p.citation)}</p></div>`;
   };
@@ -95,6 +102,17 @@
     if (!publications[id] || !modal) return;
     previousFocus = document.activeElement;
     content.innerHTML = renderPaper(id);
+    content.querySelectorAll('.modal-figure img').forEach(img => img.addEventListener('error', () => {
+      const fig = img.closest('figure');
+      if (!fig) return;
+      img.style.display = 'none';
+      if (img.src.startsWith('https://')) {
+        const note = document.createElement('p');
+        note.className = 'figure-load-note';
+        note.textContent = 'This figure is hosted by the publisher. Use the Full size link below to view it at the source.';
+        fig.prepend(note);
+      }
+    }));
     if (!modal.open) modal.showModal();
     document.body.classList.add('modal-open');
     modal.scrollTop = 0;

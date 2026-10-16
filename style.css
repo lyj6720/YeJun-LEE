@@ -7,3 +7,18 @@
 /* CV companion page */
 .cv-intro{font-size:15px}.cv-publication{display:grid;grid-template-columns:65px 1fr;gap:18px;border-bottom:1px solid var(--border);padding:16px 0}.cv-pub-year{font-size:11px;color:var(--blue);padding-top:3px}.cv-publication h3{font-size:13.5px;line-height:1.6;font-weight:600;margin:0 0 5px}.cv-publication p{font-size:10.5px;color:var(--muted);margin:0;line-height:1.85}.cv-publication a{color:var(--blue)}.cv-subhead{margin-top:29px}.cv-simple-list p{display:grid;grid-template-columns:60px 1fr;gap:12px;font-size:11px;line-height:1.8;padding:14px 0;margin:0;border-bottom:1px solid var(--border);color:var(--muted)}.cv-simple-list p span{color:var(--blue);font-weight:600}
 @media(max-width:750px){.cv-publication{grid-template-columns:42px 1fr;gap:11px}.cv-simple-list p{display:block}.cv-simple-list p span{padding-right:10px}}
+
+/* Expanded, source-grounded research portfolio */
+.research-focus{margin-top:28px;border-top:1px solid var(--border);padding-top:23px}
+.focus-row{display:grid;grid-template-columns:34px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid var(--border)}
+.focus-row>span{font-size:10px;color:var(--blue);padding-top:2px}
+.focus-row strong{font-size:12px;font-weight:620}
+.focus-row p{font-size:11px;color:var(--muted);line-height:1.7;margin:4px 0 0}
+.focus-row em{font-style:normal;color:var(--blue)}
+.conf-proceedings{font-size:10px;color:var(--muted);line-height:1.7;margin-top:3px!important}
+.research-disclaimer{margin-top:12px!important;font-size:10px!important;color:#838998!important}
+.modal-method-tags{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 24px}
+.modal-method-tags span{padding:5px 8px;font-size:10px;color:var(--blue);border:1px solid #e0e6f4;border-radius:3px}
+.cv-download{display:inline-flex;font-size:12px;border-bottom:1px solid var(--blue);color:var(--blue);padding:3px 0;font-weight:620}
+
+.figure-load-note{padding:20px;text-align:center;font-size:11px;line-height:1.7;color:var(--muted);background:var(--blue-wash);border-radius:3px}

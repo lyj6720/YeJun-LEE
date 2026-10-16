@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" role="img" aria-labelledby="chartTitle chartDesc">
+<title id="chartTitle">Published drowsiness detection performance, redrawn</title>
+<desc id="chartDesc">YOLOv8 improves from 68.2 to 95.3 percent and YOLO11 from 56.6 to 93.3 percent mAP at 50, as number of augmented images increases from zero to four hundred. Chart reconstructed from Sustainability 2025 Tables 4 and 5.</desc>
+<rect width="900" height="390" fill="#ffffff"/>
+<text x="72" y="24" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#17253e">mAP@50 by augmented image volume</text>
+<path d="M72 290.0H847" stroke="#e3e7ee" stroke-width="1"/>
+<text x="61" y="294.0" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#667285">50</text>
+<path d="M72 241.0H847" stroke="#e3e7ee" stroke-width="1"/>
+<text x="61" y="245.0" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#667285">60</text>
+<path d="M72 192.0H847" stroke="#e3e7ee" stroke-width="1"/>
+<text x="61" y="196.0" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#667285">70</text>
+<path d="M72 143.0H847" stroke="#e3e7ee" stroke-width="1"/>
+<text x="61" y="147.0" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#667285">80</text>
+<path d="M72 94.0H847" stroke="#e3e7ee" stroke-width="1"/>
+<text x="61" y="98.0" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#667285">90</text>
+<path d="M72 45.0H847" stroke="#e3e7ee" stroke-width="1"/>
+<text x="61" y="49.0" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#667285">100</text>
+<text x="72.0" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#667285">0</text>
+<text x="168.9" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#667285">50</text>
+<text x="265.8" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#667285">100</text>
+<text x="362.6" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#667285">150</text>
+<text x="459.5" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#667285">200</text>
+<text x="556.4" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#667285">250</text>
+<text x="653.2" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#667285">300</text>
+<text x="750.1" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#667285">350</text>
+<text x="847.0" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#667285">400</text>
+<polyline points="72.0,200.8 168.9,158.7 265.8,157.7 362.6,79.3 459.5,86.2 556.4,81.8 653.2,79.8 750.1,72.9 847.0,68.0" fill="none" stroke="#071d66" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<circle cx="72.0" cy="200.8" r="4" fill="#071d66"/>
+<circle cx="168.9" cy="158.7" r="4" fill="#071d66"/>
+<circle cx="265.8" cy="157.7" r="4" fill="#071d66"/>
+<circle cx="362.6" cy="79.3" r="4" fill="#071d66"/>
+<circle cx="459.5" cy="86.2" r="4" fill="#071d66"/>
+<circle cx="556.4" cy="81.8" r="4" fill="#071d66"/>
+<circle cx="653.2" cy="79.8" r="4" fill="#071d66"/>
+<circle cx="750.1" cy="72.9" r="4" fill="#071d66"/>
+<circle cx="847.0" cy="68.0" r="4" fill="#071d66"/>
+<polyline points="72.0,257.7 168.9,158.2 265.8,160.6 362.6,114.6 459.5,134.7 556.4,83.7 653.2,109.7 750.1,78.3 847.0,77.8" fill="none" stroke="#708db5" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5"/>
+<circle cx="72.0" cy="257.7" r="4" fill="#708db5"/>
+<circle cx="168.9" cy="158.2" r="4" fill="#708db5"/>
+<circle cx="265.8" cy="160.6" r="4" fill="#708db5"/>
+<circle cx="362.6" cy="114.6" r="4" fill="#708db5"/>
+<circle cx="459.5" cy="134.7" r="4" fill="#708db5"/>
+<circle cx="556.4" cy="83.7" r="4" fill="#708db5"/>
+<circle cx="653.2" cy="109.7" r="4" fill="#708db5"/>
+<circle cx="750.1" cy="78.3" r="4" fill="#708db5"/>
+<circle cx="847.0" cy="77.8" r="4" fill="#708db5"/>
+<text x="445" y="343" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#5b6475">Number of augmented images</text>
+<rect x="245" y="358" width="16" height="3" fill="#071d66"/><text x="267" y="365" font-size="12" font-family="Arial,sans-serif" fill="#283347">YOLOv8</text>
+<rect x="417" y="358" width="16" height="3" fill="#708db5"/><text x="439" y="365" font-size="12" font-family="Arial,sans-serif" fill="#283347">YOLO11</text>
+<text x="895" y="381" font-size="10" text-anchor="end" font-family="Arial,sans-serif" fill="#929aab">Redrawn from Jung et al. (2025), Tables 4–5</text>
+</svg>
