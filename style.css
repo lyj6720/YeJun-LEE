@@ -97,3 +97,15 @@ h1 span{font-family:var(--font);font-size:13px;letter-spacing:1px;margin-left:20
 /* Compact profile portrait */
 @media(min-width:751px){.portrait{width:114px;height:148px}.personal h2{margin-top:18px}}
 @media(max-width:750px){.mobile-bio img{width:64px;height:83px}.mobile-bio{margin-left:16px}}
+
+/* Publication links inspired by compact academic bibliographies */
+.paper-card{position:relative;cursor:default}
+.paper-title{font:inherit;letter-spacing:inherit;line-height:inherit;color:inherit;padding:0;border:0;background:none;text-align:left}
+.paper-title:hover{color:var(--blue);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.paper-resources{grid-column:2;display:flex;align-items:center;gap:17px;margin-top:-19px}
+.paper-resources a,.paper-resources button{font:500 10px/1.8 var(--font);color:var(--blue);padding:0;background:none;border:0}
+.paper-resources a:hover,.paper-resources button:hover{text-decoration:underline;text-underline-offset:4px}
+.paper-resources span{font-size:10px;margin-left:4px}.paper-foot{margin-bottom:4px}
+.paper-card:hover{border-color:var(--border)}.paper-card:hover .paper-figure{border-color:#e2e7ea}
+.paper-details{min-width:0}.paper-authors{max-width:570px}
+@media(max-width:750px){.paper-resources{margin-top:-9px;gap:13px;flex-wrap:wrap}.paper-resources a,.paper-resources button{font-size:9px}.paper-card{row-gap:17px}}
