@@ -51,7 +51,7 @@
   menu?.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
   nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
-  const legacy = {journals:'publications.html#journals', conferences:'publications.html#conferences', projects:'research.html#projects', experience:'work.html#experience', awards:'achievements.html#awards'};
+  const legacy = {journals:'publications.html#journals', conferences:'publications.html#conferences', projects:'research.html#projects', experience:'cv.html#cv-education', awards:'achievements.html#awards'};
   if (location.pathname.endsWith('/') || location.pathname.endsWith('/index.html')) {
     const target = legacy[location.hash.slice(1)]; if (target) location.replace(target);
   }
