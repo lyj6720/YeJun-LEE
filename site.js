@@ -45,25 +45,15 @@
   };
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
-  const nav = document.querySelector('.side-nav');
+  const nav = document.querySelector('.top-nav');
   const menu = document.querySelector('.mobile-toggle');
-  if (nav && menu) {
-    menu.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('open');
-      menu.setAttribute('aria-expanded', String(isOpen));
-    });
-    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menu.setAttribute('aria-expanded', 'false');
-    }));
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) nav.querySelectorAll('a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${entry.target.id}`));
-        });
-      }, {rootMargin: '-12% 0px -70% 0px'});
-      document.querySelectorAll('main > section[id]').forEach(el => observer.observe(el));
-    }
+  const closeMenu = () => { nav?.classList.remove('open'); menu?.setAttribute('aria-expanded', 'false'); };
+  menu?.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+  nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  const legacy = {journals:'publications.html#journals', conferences:'publications.html#conferences', projects:'research.html#projects', experience:'work.html#experience', awards:'achievements.html#awards'};
+  if (location.pathname.endsWith('/') || location.pathname.endsWith('/index.html')) {
+    const target = legacy[location.hash.slice(1)]; if (target) location.replace(target);
   }
 
   document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
